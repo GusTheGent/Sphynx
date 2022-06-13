@@ -4,6 +4,7 @@ const morgan = require("morgan");
 const path = require("path");
 const passport = require("passport");
 const session = require("express-session");
+const MongoStore = require("connect-mongo");
 const { engine } = require("express-handlebars");
 const connectDB = require("./config/db");
 
@@ -26,7 +27,10 @@ app.use(
     //Usage
     secret: "crazy-monkey",
     resave: false,
-    saveUninitialized: true,
+    saveUninitialized: false,
+    store: MongoStore.create({
+      mongoUrl: process.env.MONGO_URI,
+    }),
   })
 );
 // Sessions End
