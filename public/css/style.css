@@ -1,0 +1,42 @@
+p {
+  margin: 10px 0 !important;
+}
+
+.login-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 400px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.login-icon-background {
+  background-color: rgb(216, 186, 53);
+  width: fit-content;
+  border-radius: 100%;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.login-title {
+  margin-left: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+.brand-logo {
+  color: rgb(216, 186, 53) !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.header-icon {
+  color: #fff;
+  font-size: 2.5rem;
+}
