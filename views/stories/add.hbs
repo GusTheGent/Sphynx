@@ -1,0 +1,51 @@
+<div class="container">
+  <h3>Add Story</h3>
+  <div class="row">
+    <form action="/stories" method="POST">
+      <div class="row">
+        <div class="input-field">
+          <input type="text" id="title" name="title" />
+          <label for="title">Title</label>
+        </div>
+      </div>
+
+      {{! <div class="row">
+        <div class="input-field">
+          <select id="status" name="status">
+            <option value="Public" selected>Public</option>
+            <option value="Private">Private</option>
+          </select>
+          <label for="status">Status</label>
+        </div>
+      </div> }}
+
+      <label for="status">Choose your story's status</label>
+      <div class="row">
+        <p>
+          <label>
+            <input name="status" type="radio" value="Public" checked />
+            <span style="font-weight: 700; color: green">Public</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="status" type="radio" value="Private" />
+            <span style="font-weight: 700; color: orange">Private</span>
+          </label>
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="input-field">
+          <h5>Tell Your Story</h5>
+          <textarea id="body" name="body"></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <input type="submit" value="Post" class="btn" />
+        <a href="/dashboard" class="btn orange">Cancel</a>
+      </div>
+    </form>
+  </div>
+</div>

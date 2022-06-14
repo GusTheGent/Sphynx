@@ -14,21 +14,22 @@ p {
   text-align: center;
 }
 
-.login-icon-background {
-  background-color: rgb(216, 186, 53);
-  width: fit-content;
-  border-radius: 100%;
-  padding: 10px;
-  margin-right: 5px;
-}
-
 .login-title {
   margin-left: 5px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 15px;
 }
 
-.icon {
-  font-size: 3rem;
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.logo-nav {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin-top: 15px;
 }
 
 .brand-logo {
@@ -39,4 +40,31 @@ p {
 .header-icon {
   color: #fff;
   font-size: 2.5rem;
+}
+
+.fa-small {
+  font-size: 16px !important;
+}
+
+.dash-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 700;
+}
+
+.seperator {
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  margin-right: 2px;
+}
+.right {
+  margin-left: 2px;
+}
+
+.img-small {
+  width: 180px;
 }

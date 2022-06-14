@@ -15,6 +15,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Sphynx</title>
   </head>
   <body>
@@ -25,8 +26,14 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
     ></script>
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
     <script>
       M.Sidenav.init(document.querySelector('.sidenav'))
+      M.FormSelect.init(document.querySelector('#status'))
+
+      CKEDITOR.replace("body", {
+        plugins: 'wysiwygarea, toolbar, basicstyles, link'
+      })
     </script>
   </body>
 </html>
