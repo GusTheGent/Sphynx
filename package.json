@@ -4,8 +4,8 @@
   "description": "Users can share their secret stories and exchange opinions with each other",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "cross-env NODE_ENV=production node app.js",
+    "dev": "cross-env NODE_ENV=development nodemon app.js"
   },
   "author": "Konstantinos Angelis",
   "license": "MIT",
