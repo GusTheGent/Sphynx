@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const User = require("../models/User");
 
-dotenv.config({ path: "../.env" });
+// dotenv.config({ path: "../.env" });
 
 module.exports = function (passport) {
   passport.use(
@@ -14,7 +14,6 @@ module.exports = function (passport) {
         callbackURL: "/auth/google/callback",
       },
       async (accessToken, refreshToken, profile, done) => {
-        // console.log(profile);
         const newUser = {
           googleId: profile.id,
           displayName: profile.displayName,
