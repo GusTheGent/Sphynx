@@ -4,8 +4,7 @@
   "description": "Users can share their secret stories and exchange opinions with each other",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "postinstall": "node ./scripts/post-install.js"
+    "start": "node app.js"
   },
   "author": "Konstantinos Angelis",
   "license": "MIT",
