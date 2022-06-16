@@ -4,8 +4,7 @@
   "description": "Users can share their secret stories and exchange opinions with each other",
   "main": "app.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node app.js",
-    "dev": "cross-env NODE_ENV=development nodemon app.js",
+    "start": "node app.js",
     "postinstall": "node ./scripts/post-install.js"
   },
   "author": "Konstantinos Angelis",
@@ -23,9 +22,5 @@
     "morgan": "^1.10.0",
     "passport": "^0.6.0",
     "passport-google-oauth20": "^2.0.0"
-  },
-  "devDependencies": {
-    "cross-env": "^7.0.3",
-    "nodemon": "^2.0.16"
   }
 }
