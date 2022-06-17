@@ -4,8 +4,8 @@
   "description": "Users can share their secret stories and exchange opinions with each other",
   "main": "app.js",
   "engines": {
-    "npm": ">=6.0.0",
-    "node": ">=14.0.0"
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=production node app.js",
